@@ -17,8 +17,6 @@ logo = logo.resize((basewidth, hsize), Image.ANTIALIAS)
 # Creamos una variable para almacenar el codigo de error en caso de que al generar el QR ocurra un errors
 Qrcode = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_H)
 
-
-
 # Generamos la ruta a la que nuestro codigo QR va a redireccionar
 url = 'http://192.168.100.31:7000/login' 
 Qrcode.add_data(url)
@@ -31,6 +29,6 @@ qrimg = Qrcode.make_image(fill_color=qrcolor, back_color="white").convert('RGB')
 pos = ((qrimg.size[0] - logo.size[0]) // 2, (qrimg.size[1] - logo.size[1]) // 2)
 qrimg.paste(logo, pos)
 # Guardamos nuestro codigo QR generado como una imagen
-qrimg.save('qr_penguin.png')
+qrimg.save('static/qr.png')
 # Mostramos un texto una vez que el codigo QR haya sido generado con exito
-print('Codigo QR generado con exito')
+print('Codigo QR generado con exito') 

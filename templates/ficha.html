@@ -15,16 +15,17 @@
     <p> Nombre: {{usuario['nombre']}} </p>
     <p> Apellido: {{usuario['apellido']}} </p>
     <p> Edad: {{usuario['edad']}}</p>
-    <p> Tipo de sangre: {{usuario['tipo_de_sangre']}} </p>
-    <p> Enfermedad de base: {{usuario['enfermedad_base']}}</p>
+    <p> Tipo de sangre: {{usuario['tipo_sangre']}} </p>
+    <p> Enfermedad de base: {{usuario['enf_base']}}</p>
     <p> Alergia: {{usuario['alergia']}} </p>
     <p> Seguro medico: {{usuario['seguro_medico']}} </p>
     <br>
     <h3> Contacto de emergencia </h3>
-    <p> Nombre y apellido: {{usuario['contacto_nombre']}} </p>
-    <p> Numero de telefono: {{usuario['contacto_telefono']}} </p>
-    <p> Parentesco: {{usuario['contacto_parentesco']}} </p>
+    <p> Nombre y apellido: {{usuario['nom_cont']}} </p>
+    <p> Numero de telefono: {{usuario['tel_cont']}} </p>
+    <p> Parentesco: {{usuario['parentesco']}} </p>
 
+    <a href="{{url_for('generar_qr', cedula=usuario['cedula'])}}">Generar qr </a>
 </body>
 
 </html>
