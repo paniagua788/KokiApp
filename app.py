@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # Configuramos la ruta a la base de datos
 # Conexion a la db 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///base_de_datos.db' 
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///base_de_datos2.db' 
 # Configuramos la clave secreta para el manejo de sesiones 
 app.config['SECRET_KEY'] = 'clavesecreta'
 
@@ -18,6 +18,7 @@ class Usuario(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     nombre = db.Column(db.String(50), nullable=False)
     cedula = db.Column(db.Integer, nullable=False)
+    edad = db.Column(db.Integer, nullable=False)
     password = db.Column(db.String(50), nullable=False)
     apellido = db.Column(db.String(50), nullable=False)
     tipo_sangre = db.Column(db.String(50), nullable=False)
@@ -28,9 +29,10 @@ class Usuario(db.Model):
     tel_cont = db.Column(db.Integer, nullable=False)
     parentesco = db.Column(db.String(50), nullable=False)
 
-    def __init__(self, nombre, cedula, password, apellido, tipo_sangre, enf_base, alergia, seguro_medico, nom_cont, tel_cont, parentesco): 
+    def __init__(self, nombre, cedula, edad, password, apellido, tipo_sangre, enf_base, alergia, seguro_medico, nom_cont, tel_cont, parentesco): 
         self.nombre = nombre
         self.cedula = cedula
+        self.edad = edad
         self.password = password
         self.apellido = apellido
         self.tipo_sangre = tipo_sangre
@@ -54,6 +56,7 @@ def register():
 
         nombre = diccionario['nombre']
         cedula = diccionario['cedula']
+        edad = diccionario['edad']
         password = diccionario['password']
         apellido = diccionario['apellido']
         tipo_sangre = diccionario['tipo_sangre']
@@ -67,7 +70,7 @@ def register():
         print(nombre, cedula, password, apellido, tipo_sangre, enf_base, alergia, seguro_medico, nom_cont, tel_cont, parentesco)
 
         # crear un objeto con los datos del form y guardar 
-        user = Usuario(nombre, cedula, password, apellido, tipo_sangre, enf_base, alergia, seguro_medico, nom_cont, tel_cont, parentesco)
+        user = Usuario(nombre, cedula, edad, password, apellido, tipo_sangre, enf_base, alergia, seguro_medico, nom_cont, tel_cont, parentesco)
         
         # Agregar a la base de datos
         db.session.add(user)
