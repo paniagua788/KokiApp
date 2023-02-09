@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha</title>
+</head>
+
+<body>
+    <h2> Bienvenido {{usuario['nombre']}}!!! </h2>
+    <h3> Informacion personal </h3>
+    <p> Cedula: {{usuario['cedula']}} </p>
+    <p> Nombre: {{usuario['nombre']}} </p>
+    <p> Apellido: {{usuario['apellido']}} </p>
+    <p> Tipo de sangre: {{usuario['tipo_de_sangre']}} </p>
+    <p> Alergia: {{usuario['alergia']}} </p>
+    <p> Seguro medico: {{usuario['seguro_medico']}} </p>
+    <br>
+    <h3> Contacto de emergencia </h3>
+    <p> Nombre y apellido: {{usuario['contacto_nombre']}} </p>
+    <p> Numero de telefono: {{usuario['contacto_telefono']}} </p>
+    <p> Parentesco: {{usuario['contacto_parentesco']}} </p>
+
+</body>
+
+</html>
