@@ -18,7 +18,7 @@ logo = logo.resize((basewidth, hsize), Image.ANTIALIAS)
 Qrcode = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_H)
 
 # Generamos la ruta a la que nuestro codigo QR va a redireccionar
-url = 'http://192.168.100.31:7000/login' 
+url = 'http://192.168.240.6:7000/login' 
 Qrcode.add_data(url)
 # Generamos el codigo QR
 qrcode.make()

@@ -25,7 +25,8 @@
     <p> Numero de telefono: {{usuario['tel_cont']}} </p>
     <p> Parentesco: {{usuario['parentesco']}} </p>
 
-    <a href="{{url_for('generar_qr', cedula=usuario['cedula'])}}">Generar qr </a>
+    <a href="{{url_for('generar_qr', cedula=usuario['cedula'])}}"><button>Generar qr</button></a> <br>
+    <a href="{{url_for('login')}}"> <button>Volver</button></a>
 </body>
 
 </html>

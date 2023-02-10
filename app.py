@@ -70,8 +70,8 @@ def register():
         nom_cont = diccionario['contacto']
         tel_cont = diccionario['telefono']
         parentesco = diccionario['parentesco']
-
-        print(nombre, cedula, password, apellido, tipo_sangre, enf_base, alergia, seguro_medico, nom_cont, tel_cont, parentesco)
+        
+        #print(nombre, cedula, password, apellido, tipo_sangre, enf_base, alergia, seguro_medico, nom_cont, tel_cont, parentesco)
 
         # crear un objeto con los datos del form y guardar 
         user = Usuario(nombre, cedula, edad, password, apellido, tipo_sangre, enf_base, alergia, seguro_medico, nom_cont, tel_cont, parentesco)
@@ -80,7 +80,7 @@ def register():
         db.session.add(user)
         # Confirmar la operacion
         db.session.commit()
-
+        return redirect(url_for('login'))
     return render_template('register.html')
 
 
@@ -148,7 +148,7 @@ def qr_generator(cedula, url):
 @app.route('/generar_qr')
 def generar_qr(): 
     cedula = request.args['cedula']
-    ip = '192.168.100.52:7000'
+    ip = '192.168.240.6:7000'
     url = 'http://'+ip+'/ficha?cedula='+cedula
     qr_generator (cedula, url)
 
@@ -157,7 +157,7 @@ def generar_qr():
 
 @app.route("/")
 def index(): 
-    return render_template()
+    return 'Hola'
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=7000, debug=True)
