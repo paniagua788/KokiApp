@@ -82,7 +82,7 @@ def register():
     return render_template('register.html')
 
 
-@app.route('/login', methods= ['GET','POST'])
+@app.route('/', methods= ['GET','POST'])
 def login():
     if request.method == 'POST':
         cedula = request.form['cedula']
@@ -158,4 +158,4 @@ def index():
     return 'Hola'
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=7000, debug=True)
+    app.run(host="0.0.0.0",debug=True)
