@@ -2,8 +2,6 @@ from flask import Flask, render_template, request, url_for, redirect
 from flask_sqlalchemy import SQLAlchemy
 import qrcode
 from PIL import Image
-from datetime import date, datetime
-from datetime import timedelta
 
 app = Flask(__name__)
 
