@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 # Configuramos la ruta a la base de datos
 # Conexion a la db 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///base_de_datos2.db' 
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///base_de_datos3.db' 
 # Configuramos la clave secreta para el manejo de sesiones 
 app.config['SECRET_KEY'] = 'clavesecreta'
 
@@ -116,7 +116,7 @@ def ficha():
 
 def qr_generator(cedula, url): 
     # Pasamos el logo que vamos a utilizar en el qr code como una imagen
-    logo_link = './static/lucas.jpeg'
+    logo_link = './static/logotipo.jpeg'
     logo = Image.open(logo_link)
 
     # Pasamos los parametros de tamaño y color para nuestro codigo QR

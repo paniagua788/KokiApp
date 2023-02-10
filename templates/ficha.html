@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>
-     MedicFile
+        MedicFile
     </title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -15,59 +16,57 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
     <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
     <style>
-      .gradient {
-        background: linear-gradient(90deg, #141c7371 0%, #283cbd 100%);
-      }
+        .gradient {
+            background: linear-gradient(90deg, #141c7371 0%, #283cbd 100%);
+        }
     </style>
-      <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
     <!--Nav-->
     <nav id="header" class="fixed w-full z-30 top-0 text-white">
-      <div class="w-full m-10 container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-        <div class="pl-4 flex items-center">
-          <div class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
-              <img class="h-8 fill-current inline" src="..//logotipo.png" alt="">
-            </svg>
-            MedicFile
-        </div>
-        </div>
-        <div class="block lg:hidden pr-4">
-          <button id="nav-toggle" class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        <div class="w-full m-10 container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+            <div class="pl-4 flex items-center">
+                <div class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
+                    <img class="h-8 fill-current inline" src="..//logotipo.png" alt="">
+                    </svg>
+                    MedicFile
+                </div>
+            </div>
+            <div class="block lg:hidden pr-4">
+                <button id="nav-toggle" class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <title>Menu</title>
               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
             </svg>
           </button>
-        </div>
-        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
-          <ul class="list-reset lg:flex justify-end flex-1 items-center">
-          </ul>
-          <button
-            id="navAction"
-            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-          >
-            <a href="./enviar_datos.html">Editar ficha</a>  
+            </div>
+            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                </ul>
+                <button id="navAction" class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                    <a href="{{url_for('login')}}">Cerrar sesion</a>  
           
           </button>
+            </div>
         </div>
-      </div>
-      <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+        <hr class="border-b border-gray-100 opacity-0 my-0 py-0" />
     </nav>
     <!--Hero-->
     <div class="pt-24">
-      <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-        <!--Left Col-->
-        <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-        
-            <p class="leading-normal text-2xl mb-8">
-            </p>
-          </div>
-       
-      </div>
+        <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+            <!--Left Col-->
+            <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+
+                <p class="leading-normal text-2xl mb-8">
+                </p>
+            </div>
+
+        </div>
     </div>
     <div class="relative -mt-12 lg:-mt-24">
-      <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
             <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
@@ -87,93 +86,93 @@
     </div>
     <section class="bg-white border-b py-8">
 
-      <div class="container mx-auto px-2 pb-12 text-gray-800">    
-        <div class="w-full mb-4">
-        <div class="flex flex-col sm:flex-row justify-center pt-8 my-12 sm:my-4">
-          <div class="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10">
-            <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-              <div class="w-full p-8 text-3xl font-bold text-center">Ficha Medica</div>
-              <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
-              <div class="flex flex-col w-full" >
-                <div class="bg-white px-4 py-5 shadow sm:rounded-lg sm:p-6">
-                    <div class="">
-                        <div class="mt-5 md:col-span-2 md:mt-0 w-full">
-                            <div class="flex flex-col justify-center space-y-6">
-                                <div class=" col-span-8sm:col-span-3">
-                                    <label for="first-name" class=" block text-2xl font-medium text-gray-700">Informacion Personal </label>
+        <div class="container mx-auto px-2 pb-12 text-gray-800">
+            <div class="w-full mb-4">
+                <div class="flex flex-col sm:flex-row justify-center pt-8 my-12 sm:my-4">
+                    <div class="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10">
+                        <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+                            <div class="w-full p-8 text-3xl font-bold text-center">Ficha Medica</div>
+                            <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
+                            <div class="flex flex-col w-full">
+                                <div class="bg-white px-4 py-5 shadow sm:rounded-lg sm:p-6">
+                                    <div class="">
+                                        <div class="mt-5 md:col-span-2 md:mt-0 w-full">
+                                            <div class="flex flex-col justify-center space-y-6">
+                                                <div class=" col-span-8sm:col-span-3">
+                                                    <label for="first-name" class=" block text-2xl font-medium text-gray-700">Informacion Personal </label>
+                                                </div>
+
+                                                <div class="   col-span-6 ">
+                                                    <label for="cedula" class="block text-sm font-medium text-gray-700">C.I.</label>
+                                                    <p class="bg-gray-300 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 text-center"> {{usuario['cedula']}} </p>
+                                                </div>
+
+                                                <div class="   col-span-6 ">
+                                                    <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre</label>
+                                                    <p class="bg-gray-300 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 text-center"> {{usuario['nombre']}} </p>
+                                                </div>
+
+                                                <div class="   col-span-6 ">
+                                                    <label for="apellido" class="block text-sm font-medium text-gray-700">Apellido</label>
+                                                    <p class="bg-gray-300 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 text-center"> {{usuario['apellido']}} </p>
+                                                </div>
+
+                                                <div class="   col-span-6 ">
+                                                    <label for="edad" class="block text-sm font-medium text-gray-700">Edad</label>
+                                                    <p class="bg-gray-300 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 text-center"> {{usuario['edad']}} </p>
+                                                </div>
+                                                <div class=" col-span-8sm:col-span-3">
+                                                    <label for="first-name" class=" block text-2xl font-medium text-gray-700">Ficha Medica</label>
+                                                </div>
+
+                                                <div class="   col-span-6 ">
+                                                    <label for="" class="block text-sm font-medium text-gray-700">Tipo de sangre</label>
+                                                    <p class="bg-gray-300 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 text-center"> {{usuario['tipo_sangre']}} </p>
+                                                </div>
+
+                                                <div class="   col-span-6 ">
+                                                    <label for="alergia " class="block text-sm font-medium text-gray-700">Alergias</label>
+                                                    <p class="bg-gray-300 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 text-center"> {{usuario['alergia']}} </p>
+                                                </div>
+
+                                                <div class="   col-span-6 ">
+                                                    <label for="enf_base " class="block text-sm font-medium text-gray-700">Enfermedades de base</label>
+                                                    <p class="bg-gray-300 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 text-center"> {{usuario['enf_base']}} </p>
+                                                </div>
+
+                                                <div class="   col-span-6 ">
+                                                    <label for="seguro_medico " class="block text-sm font-medium text-gray-700">Seguro medico</label>
+                                                    <p class="bg-gray-300 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 text-center"> {{usuario['seguro_medico']}} </p>
+                                                </div>
+
+                                                <div class=" col-span-8sm:col-span-3">
+                                                    <label for="first-name" class=" block text-2xl font-medium text-gray-700">Contacto de Emergencia</label>
+                                                </div>
+
+                                                <div class="   col-span-6 ">
+                                                    <label for="nom_cont " class="block text-sm font-medium text-gray-700">Nombre</label>
+                                                    <p class="bg-gray-300 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 text-center"> {{usuario['nom_cont']}} </p>
+                                                </div>
+
+                                                <div class="   col-span-6 ">
+                                                    <label for="tel_cont" class="block text-sm font-medium text-gray-700">Numero de Telefono</label>
+                                                    <p class="bg-gray-300 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 text-center"> {{usuario['tel_cont']}} </p>
+                                                </div>
+
+                                                <div class="   col-span-6 ">
+                                                    <label for="parentesco" class="block text-sm font-medium text-gray-700">Parentesco</label>
+                                                    <p class="bg-gray-300 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 text-center"> {{usuario['parentesco']}} </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-        
-                                <div class="   col-span-6 ">
-                                  <label for="cedula" class="block text-sm font-medium text-gray-700">C.I.</label>
-                                  <p class="bg-gray-300 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 text-center"> {{usuario['cedula']}} </p>
-                                </div>
-        
-                                <div class="   col-span-6 ">
-                                    <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre</label>
-                                    <p class="bg-gray-300 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 text-center"> {{usuario['nombre']}} </p>
-                                </div>
-        
-                                <div class="   col-span-6 ">
-                                  <label for="apellido" class="block text-sm font-medium text-gray-700">Apellido</label>
-                                  <p class="bg-gray-300 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 text-center"> {{usuario['apellido']}} </p>
-                                </div>
-        
-                                <div class="   col-span-6 ">
-                                  <label for="edad" class="block text-sm font-medium text-gray-700">Edad</label>
-                                  <p class="bg-gray-300 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 text-center">  {{usuario['edad']}} </p>
-                                </div>
-                                <div class=" col-span-8sm:col-span-3">
-                                    <label for="first-name" class=" block text-2xl font-medium text-gray-700">Ficha Medica</label>
-                                </div>
-        
-                                <div class="   col-span-6 ">
-                                  <label for="" class="block text-sm font-medium text-gray-700">Tipo de sangre</label>
-                                  <p class="bg-gray-300 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 text-center"> {{usuario['tipo_sangre']}} </p>
-                                </div>
-        
-                                <div class="   col-span-6 ">
-                                  <label for="alergia " class="block text-sm font-medium text-gray-700">Alergias</label>
-                                  <p class="bg-gray-300 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 text-center"> {{usuario['alergia']}} </p>
-                                </div>
-        
-                                <div class="   col-span-6 ">
-                                  <label for="enf_base " class="block text-sm font-medium text-gray-700">Enfermedades de base</label>
-                                  <p class="bg-gray-300 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 text-center"> {{usuario['enf_base']}} </p>
-                                </div>
-        
-                                <div class="   col-span-6 ">
-                                  <label for="seguro_medico " class="block text-sm font-medium text-gray-700">Seguro medico</label>
-                                  <p class="bg-gray-300 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 text-center"> {{usuario['seguro_medico']}} </p>
-                                </div>
-        
-                                <div class=" col-span-8sm:col-span-3">
-                                    <label for="first-name" class=" block text-2xl font-medium text-gray-700">Contacto de Emergencia</label>
-                                </div>
-                
-                                <div class="   col-span-6 ">
-                                    <label for="nom_cont " class="block text-sm font-medium text-gray-700">Nombre</label>
-                                    <p class="bg-gray-300 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 text-center"> {{usuario['nom_cont']}} </p>
-                                </div>
-        
-                                <div class="   col-span-6 ">
-                                    <label for="tel_cont" class="block text-sm font-medium text-gray-700">Numero de Telefono</label>
-                                    <p class="bg-gray-300 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 text-center"> {{usuario['tel_cont']}} </p>
-                                </div>
-        
-                                <div class="   col-span-6 ">
-                                    <label for="parentesco" class="block text-sm font-medium text-gray-700">Parentesco</label>
-                                    <p class="bg-gray-300 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 text-center"> {{usuario['parentesco']}} </p>
-                                </div>
-        
                             </div>
                         </div>
                     </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
     </section>
     <!-- Change the colour #f8fafc to match the previous section colour -->
     <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -198,96 +197,99 @@
       </g>
     </svg>
     <section class="container mx-auto text-center py-6 mb-12">
-      <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
-        Generar codigo QR.
-      </h1>
-      <div class="m-10">
-        <a href="{{url_for('generar_qr', cedula=usuario['cedula'])}}" class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+            Generar codigo QR.
+        </h1>
+        <div class="m-10">
+            <a href="{{url_for('generar_qr', cedula=usuario['cedula'])}}" class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           Codigo QR
         </a>
-      </div>
+        </div>
     </section>
-   
+
     <script>
-      var scrollpos = window.scrollY;
-      var header = document.getElementById("header");
-      var navcontent = document.getElementById("nav-content");
-      var navaction = document.getElementById("navAction");
-      var brandname = document.getElementById("brandname");
-      var toToggle = document.querySelectorAll(".toggleColour");
+        var scrollpos = window.scrollY;
+        var header = document.getElementById("header");
+        var navcontent = document.getElementById("nav-content");
+        var navaction = document.getElementById("navAction");
+        var brandname = document.getElementById("brandname");
+        var toToggle = document.querySelectorAll(".toggleColour");
 
-      document.addEventListener("scroll", function () {
-        /*Apply classes for slide in bar*/
-        scrollpos = window.scrollY;
+        document.addEventListener("scroll", function() {
+            /*Apply classes for slide in bar*/
+            scrollpos = window.scrollY;
 
-        if (scrollpos > 10) {
-          header.classList.add("bg-white");
-          navaction.classList.remove("bg-white");
-          navaction.classList.add("gradient");
-          navaction.classList.remove("text-gray-800");
-          navaction.classList.add("text-white");
-          //Use to switch toggleColour colours
-          for (var i = 0; i < toToggle.length; i++) {
-            toToggle[i].classList.add("text-gray-800");
-            toToggle[i].classList.remove("text-white");
-          }
-          header.classList.add("shadow");
-          navcontent.classList.remove("bg-gray-100");
-          navcontent.classList.add("bg-white");
-        } else {
-          header.classList.remove("bg-white");
-          navaction.classList.remove("gradient");
-          navaction.classList.add("bg-white");
-          navaction.classList.remove("text-white");
-          navaction.classList.add("text-gray-800");
-          //Use to switch toggleColour colours
-          for (var i = 0; i < toToggle.length; i++) {
-            toToggle[i].classList.add("text-white");
-            toToggle[i].classList.remove("text-gray-800");
-          }
-
-          header.classList.remove("shadow");
-          navcontent.classList.remove("bg-white");
-          navcontent.classList.add("bg-gray-100");
-        }
-      });
-    </script>
-    <script>
-      /*Toggle dropdown list*/
-      /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
-
-      var navMenuDiv = document.getElementById("nav-content");
-      var navMenu = document.getElementById("nav-toggle");
-
-      document.onclick = check;
-      function check(e) {
-        var target = (e && e.target) || (event && event.srcElement);
-
-        //Nav Menu
-        if (!checkParent(target, navMenuDiv)) {
-          // click NOT on the menu
-          if (checkParent(target, navMenu)) {
-            // click on the link
-            if (navMenuDiv.classList.contains("hidden")) {
-              navMenuDiv.classList.remove("hidden");
+            if (scrollpos > 10) {
+                header.classList.add("bg-white");
+                navaction.classList.remove("bg-white");
+                navaction.classList.add("gradient");
+                navaction.classList.remove("text-gray-800");
+                navaction.classList.add("text-white");
+                //Use to switch toggleColour colours
+                for (var i = 0; i < toToggle.length; i++) {
+                    toToggle[i].classList.add("text-gray-800");
+                    toToggle[i].classList.remove("text-white");
+                }
+                header.classList.add("shadow");
+                navcontent.classList.remove("bg-gray-100");
+                navcontent.classList.add("bg-white");
             } else {
-              navMenuDiv.classList.add("hidden");
+                header.classList.remove("bg-white");
+                navaction.classList.remove("gradient");
+                navaction.classList.add("bg-white");
+                navaction.classList.remove("text-white");
+                navaction.classList.add("text-gray-800");
+                //Use to switch toggleColour colours
+                for (var i = 0; i < toToggle.length; i++) {
+                    toToggle[i].classList.add("text-white");
+                    toToggle[i].classList.remove("text-gray-800");
+                }
+
+                header.classList.remove("shadow");
+                navcontent.classList.remove("bg-white");
+                navcontent.classList.add("bg-gray-100");
             }
-          } else {
-            // click both outside link and outside menu, hide menu
-            navMenuDiv.classList.add("hidden");
-          }
-        }
-      }
-      function checkParent(t, elm) {
-        while (t.parentNode) {
-          if (t == elm) {
-            return true;
-          }
-          t = t.parentNode;
-        }
-        return false;
-      }
+        });
     </script>
-  </body>
+    <script>
+        /*Toggle dropdown list*/
+        /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+
+        var navMenuDiv = document.getElementById("nav-content");
+        var navMenu = document.getElementById("nav-toggle");
+
+        document.onclick = check;
+
+        function check(e) {
+            var target = (e && e.target) || (event && event.srcElement);
+
+            //Nav Menu
+            if (!checkParent(target, navMenuDiv)) {
+                // click NOT on the menu
+                if (checkParent(target, navMenu)) {
+                    // click on the link
+                    if (navMenuDiv.classList.contains("hidden")) {
+                        navMenuDiv.classList.remove("hidden");
+                    } else {
+                        navMenuDiv.classList.add("hidden");
+                    }
+                } else {
+                    // click both outside link and outside menu, hide menu
+                    navMenuDiv.classList.add("hidden");
+                }
+            }
+        }
+
+        function checkParent(t, elm) {
+            while (t.parentNode) {
+                if (t == elm) {
+                    return true;
+                }
+                t = t.parentNode;
+            }
+            return false;
+        }
+    </script>
+</body>
+
 </html>
