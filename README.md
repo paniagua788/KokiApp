@@ -20,6 +20,7 @@ Nuestra solucion plantea una pagina web que permite generar una ficha medica con
 - TailwindCSS
 - Flask
 - Flask Sql Alchemy
+- Python
 - Pillow PIL
 - QR Code
 
